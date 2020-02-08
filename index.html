@@ -1,19 +1,26 @@
 <!doctype html>
 <html>
     <head>
-        <title>To do app</title>
+        <title>Shopping List</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicon//apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicon//favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <h1>Shopping <span class="title">List</span></h1>
+        <div class="container">
         <div class="header">
-            <h2>Shopping List</h2>
-            <input type="text" id="listInput" placeholder="Title...">
+            <input type="text" id="listInput" placeholder="Add item to the list">
             <button onclick="addToList()" class="addButton">Add</button>
-          </div>
+        </div>
           
-          <ul id="shoppingList">
+        <ul id="shoppingList">
             
-          </ul>
+        </ul>
+    </div>
           <script src="script.js"></script>
     </body>
 </html>

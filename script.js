@@ -7,11 +7,11 @@ function addToList() {
   element.appendChild(text);
 
   if (inputValue === '') {
-    alert("Write something!");
+    alert("You have to write what you want to add!");
   } else {
     document.getElementById("shoppingList").appendChild(element);
   }
-  document.getElementById("listInput").value = ""; //czyści input
+  document.getElementById("listInput").value = ""; //clear input
 
   var button = document.createElement("button");
   var buttonText = document.createTextNode("-");
