@@ -61,6 +61,8 @@ h1 {
 
 ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -69,6 +71,7 @@ li {
     padding-bottom: 15px;
     padding-top: 15px;
     font-size: 15px;
+   display: flex;
   }
   
 .remove{
@@ -76,7 +79,7 @@ li {
     outline: 0;
     border: none;
     cursor: pointer;
-    margin-left: 700px;
+    margin-left: 680px;
     background-color: antiquewhite;
   }
 
