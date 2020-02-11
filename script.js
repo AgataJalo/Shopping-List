@@ -14,7 +14,7 @@ function addToList() {
   document.getElementById("listInput").value = ""; //clear input
 
   var button = document.createElement("button");
-  var buttonText = document.createTextNode("-");
+  var buttonText = document.createTextNode("X");
   button.className = "remove";
   button.appendChild(buttonText);
   element.appendChild(button);

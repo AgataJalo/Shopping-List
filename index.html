@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Shopping List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" sizes="180x180" href="Favicon//apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="Favicon//favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="Favicon//favicon-16x16.png">
@@ -10,16 +11,19 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Shopping <span class="title">List</span></h1>
         <div class="container">
-        <div class="header">
-            <input type="text" id="listInput" placeholder="Add item to the list">
+        <h1>Shopping <span class="title">List</span></h1>
+        
+        <div class="addTaskSection">
+            <input type="text" id="listInput" placeholder="Write here, to add item to the list.">
             <button onclick="addToList()" class="addButton">Add</button>
         </div>
           
+        <div class="shoppingBoard">
         <ul id="shoppingList">
-            
+            <p>Items to buy:</p>
         </ul>
+    </div>
     </div>
           <script src="script.js"></script>
     </body>
