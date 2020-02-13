@@ -81,7 +81,8 @@ li {
     padding-bottom: 15px;
     padding-top: 15px;
     font-size: 15px;
-   display: flex;
+    text-transform: uppercase;
+    display: flex;
   }
   
 .remove {
@@ -93,3 +94,9 @@ li {
     background-color: white;
   }
 
+  ul li.bought {
+    font-weight: bold;
+    color: green;;
+  }
+  
+  

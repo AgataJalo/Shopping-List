@@ -35,7 +35,7 @@ var i;
 
 for(i=0; i<myList.length; i++){
     var button = document.createElement("button");
-    var buttonText= document.createTextNode("-");
+    var buttonText= document.createTextNode("X");
     button.className = "remove";
     button.appendChild(buttonText);
     myList[i].appendChild(button);
@@ -47,8 +47,16 @@ var remove = document.getElementsByClassName("remove");
 var i;
 for (i = 0; i < remove.length; i++) {
   remove[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
+    var li = this.parentElement;
+    li.style.display = "none";
   }
 }
 
+//Item designation as purchased
+
+var list = document.querySelector('ul');
+list.addEventListener('click', function(e) {
+  if (e.target.tagName === 'LI') {
+    e.target.classList.toggle('bought');
+  }
+}, false);
