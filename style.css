@@ -95,8 +95,12 @@ li {
   }
 
   ul li.bought {
-    font-weight: bold;
-    color: green;;
+    color: lightgrey;
+    cursor: pointer;
+  }
+
+  ul li:hover{
+    cursor: pointer;
   }
   
   

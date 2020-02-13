@@ -5,11 +5,19 @@ function addToList() {
   var inputValue = document.getElementById("listInput").value;
   var text = document.createTextNode(inputValue);
   element.appendChild(text);
+  
+  //TO DO: repair comparing input and li text values
+  var element2 = document.getElementsByTagName("li");
+  console.log(inputValue);
+  console.log(element2)
+  
 
   if (inputValue === '') {
     alert("You have to write what you want to add!");
+  } else if (inputValue === element2){
+    alert("Item is already on your list");
   } else {
-    document.getElementById("shoppingList").appendChild(element);
+  document.getElementById("shoppingList").appendChild(element);
   }
   document.getElementById("listInput").value = ""; //clear input
 
